@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.proyectofinal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cerebro"
+        android:label="IntelApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MisAmigosActivity"></activity>
+        <activity android:name=".HistorialResultadosActivity" />
+        <activity android:name=".AgregarAmigoActivity" />
+        <activity android:name=".AmistadesActivity" />
+        <activity android:name=".TiposActivity" />
+        <activity android:name=".RecomendacionesActivity" />
+        <activity android:name=".ResultadosActivity" />
+        <activity android:name=".PruebasActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

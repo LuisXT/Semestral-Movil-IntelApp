@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/borde"
+    tools:context=".TiposActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:text="@string/tipos_de_inteligencia"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="@string/auditivo"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#ed1c24"
+        />
+
+    <TextView
+        android:id="@+id/DesAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toEndOf="@+id/textView1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-35dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="-35dp"
+        android:text="Es la capacidad de percibir, discriminar, transformar y expresar todas las formas conocidas de musica. "
+        android:textSize="15sp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/Audio"
+        android:contentDescription="imagen que muestra INT tipo audio"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/DesAudio"
+        android:layout_alignBottom="@+id/DesAudio"
+        android:layout_marginStart="-115dp"
+        android:layout_toEndOf="@+id/DesAudio"
+        app:srcCompat="@drawable/musica"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="250dp"
+        android:gravity="center"
+        android:text="@string/visual"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#0071bc"
+        />
+
+    <TextView
+        android:id="@+id/DesVisual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="-85dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:text="Es la habilidad para percivir de manera exacta el mundo visual-espacial y poder ejecutar modificaciones a esas percepciones; Osea poder ver un entorno en especifico y poder realizar diversasa acciones en este. "
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/Visual"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/DesVisual"
+        android:layout_alignBottom="@+id/DesVisual"
+        android:layout_marginStart="-115dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toEndOf="@+id/DesVisual"
+        android:contentDescription="Imagen que muestra graficamente INT tipo vista"
+        app:srcCompat="@drawable/visual"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="440dp"
+        android:gravity="center"
+        android:text="@string/kinestetica"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#ccb200"
+        />
+
+    <TextView
+        android:id="@+id/DesKinestetico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="-70dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:text="Es la habilidad para usar el cuerpo como forma de expresión, osea que con acciones o gestos eres capas de transmitir tus emociones o ideas."
+        tools:ignore="HardcodedText"
+        />
+
+    <ImageView
+        android:id="@+id/kinestetico"
+        android:contentDescription="imagen que muestra INT tipo kinestetico"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/DesKinestetico"
+        android:layout_alignBottom="@+id/DesKinestetico"
+        android:layout_marginStart="-115dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toEndOf="@+id/DesKinestetico"
+        app:srcCompat="@drawable/kinestetico"
+        tools:ignore="HardcodedText" />
+
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:contentDescription="@string/es_el_icono_principal_de_la_app_aparecera_en_el_resto_de_pantalla_en_la_parte_inferior_de_la_ventana_junto_al_boton_regresar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@id/DesKinestetico"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/cerebro" />
+</RelativeLayout>

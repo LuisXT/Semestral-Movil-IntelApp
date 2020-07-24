@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/borde"
+    tools:context=".RecomendacionesActivity">
+
+
+    <TextView
+        android:id="@+id/textViewRecomendacionesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="@string/recomendaciones"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/textViewRecomendacion1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:text="Visual: \n Si quiere mejorar su inteligencia visual-espacial, podria empezar a realizar dibujos de 3D, construir rompecabezas o inclusive analizar su entorno. \n Si quiere mas consejos, visite el siguiente link:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRecomendacionesTitle"
+        tools:ignore="HardcodedText"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+    <TextView
+        android:id="@+id/textViewRecomendacion1Link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/visual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewRecomendacion1"
+        app:layout_constraintBottom_toTopOf="@id/divider"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#0071bc"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRecomendacion2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRecomendacion1Link" />
+
+    <TextView
+        android:id="@+id/textViewRecomendacion2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:text="Auditivo: \n Si quieres mejorar tu inteligencia auditiva, puedes iniciar conociendo las notas musicales y su sonido, tambien puedes empezar a escuchar todo genero de musica conocido e inclusive iniciar a tocar un instrumento. \n Si quieres saber mas consejos, presione el siguiente link:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRecomendacion1"
+        android:fontFamily="sans-serif-condensed-medium"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textViewRecomendacion2Link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auditivo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewRecomendacion2"
+        app:layout_constraintBottom_toBottomOf="@id/divider2"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#ed1c24"/>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRecomendacion3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRecomendacion2Link" />
+
+    <TextView
+        android:id="@+id/textViewRecomendacion3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Kinestetico: \n Si quieres mejorar tu inteligencia kinestetica, puedes iniciar realizando todo tipo de actividad fisica, tambien aprender a bailar o inclusive aprender a realizar gestos. \n Si quieres saber mas consejos, visite el siguiente link:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRecomendacion2"
+        android:fontFamily="sans-serif-condensed-medium"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/textViewRecomendacion3Link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kinestetica"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewRecomendacion3"
+        app:layout_constraintBottom_toTopOf="@id/imageView4"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#ccb200"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:contentDescription="@string/es_el_icono_principal_de_la_app_aparecera_en_el_resto_de_pantalla_en_la_parte_inferior_de_la_ventana_junto_al_boton_regresar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewRecomendacion3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cerebro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
